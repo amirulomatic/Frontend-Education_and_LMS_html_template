@@ -1,0 +1,612 @@
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --main-color: #ffc178;
+    --color-black: #000;
+    --color-light: #5a6e79;
+    --color-extralight:#969595;
+    --color-white:#fff;
+    --main-font: 'Montserrat', sans-serif;
+    --secondery-font: 'Work Sans', sans-serif;
+    --body-font-size: 16px;
+    --body-font-mini: 14px;
+    --body-font-size-medium:18px;
+    --heading1-font-size: 40px;
+    --heading2-font-size: 30px;
+    --heading2-font-size:;
+    
+}
+
+
+
+
+/* hero section stylling start */
+
+.hero-section{
+    background: url('../images/header\ section\ bg.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hero-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.hero-section .nav{
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section .nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.hero-section .nav li a{
+    display: block;
+    padding: 3px 15px;
+    margin: 0;
+    color: var(--color-light);
+    font-size: var(--body-font-size);
+    transition: all .3s ease;
+    position: relative;
+}
+
+.hero-section .nav li a:hover{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.hero-section .nav li a.active{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.hero-section .nav li a.active::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    width: 50%;
+    background: var(--main-color);
+}
+
+.hero-section .nav li a.nav-btn{
+    background: var(--color-white);
+    margin-left: 7px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: var(--main-color);
+}
+
+.hero-section .nav li a.nav-btn:hover{
+    background: var(--main-color);
+    color: var(--color-white);
+}
+
+
+.hero-section .header-banner{
+    padding: 150px 0px 300px 0px;
+}
+
+
+
+.hero-section .header-banner h1{
+    font-size: var(--heading1-font-size);
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.hero-section .header-banner h1 span{
+    display: block;
+}
+
+.hero-section .header-banner p{
+    color: var(--color-light);
+    font-size: var(--body-font-size-medium);
+    width: 43%;
+    padding: 20px 0 25px 0;
+    line-height: 1.3;
+}
+
+.hero-section .header-banner button{
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: var(--body-font-size-medium);
+    background: var(--main-color);
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+/* hero section stylling stop */
+
+
+/* department section stylling start */
+
+.department{
+    margin-top: -50px;
+}
+
+.department h1{
+    font-size: var(--heading1-font-size);
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--color-black);
+}
+
+.department p{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: var(--body-font-size);
+    color: var(--color-light);
+    padding: 20px 0px 30px 0px;
+    line-height: 1.3;
+}
+
+.department .department-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.department .department-wrap .department-item{
+    flex-basis: 31%;
+    height: 350px;
+    position: relative;
+    border-radius: 3px;
+    margin: 0;
+    text-align: center;
+
+}
+
+.department .department-wrap .department-item h2{
+    position: absolute;
+    display: inline-block;
+    color: var(--color-white);
+    font-size: var(--heading2-font-size);
+    font-family: var(--secondery-font);
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.dept-item1{
+    background: url('../images/dept1.jpg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.dept-item2{
+    background: url('../images/dept2.jpg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.dept-item3{
+    background: url('../images/dept3.jpg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* department section stylling stop */
+
+
+/* possibilities section stylling start */
+.possibilities{
+    padding: 100px 0;
+}
+
+.possibilities-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.possib-left{
+    max-width: 380px;
+    position: relative;
+    margin: 0;
+}
+
+
+.possib-left img{
+    max-width: 380px;
+    max-height: 380px;
+    border-radius: 50%;
+    border: 25px solid white;
+
+   
+}
+
+.possib-left button{
+    background: var(--main-color);
+    border: none;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    line-height: 1;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 39%;
+}
+
+.possib-left button i{
+    font-size: 25px;
+    line-height: 70px;
+    color: var(--color-white);
+}
+
+.possib-right{
+    flex-basis: 52%;
+    margin: 0;
+}
+
+.possib-right h1{
+    font-family: var(--main-font);
+    font-size: var(--heading1-font-size);
+    color: var(--color-black);
+}
+
+.possib-right > p{
+    font-family: var(--secondery-font);
+    font-size: var(--body-font-size);
+    color: var(--color-light);
+    line-height: 1.3;
+    padding-top: 30px;
+}
+
+.possib-right .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0 0 0;
+}
+
+.possib-right .inner-wrap .students h1{
+    color: #ffba00;
+    font-size: var(--heading1-font-size);
+    font-family: var(--main-font);
+}
+
+.possib-right .inner-wrap .students p{
+    color: #ffba00;
+    font-size: var(--body-font-size-medium);
+}
+
+.possib-right .inner-wrap .courses h1{
+    color: #ff5f72;
+    font-size: var(--heading1-font-size);
+    font-family: var(--main-font);
+}
+
+.possib-right .inner-wrap .courses p{
+    color: #ff5f72;
+    font-size: var(--body-font-size-medium);
+}
+
+.possib-right .inner-wrap .videos h1{
+    color: #43cb83;
+    font-size: var(--heading1-font-size);
+    font-family: var(--main-font);
+}
+
+.possib-right .inner-wrap .videos p{
+    color: #43cb83;
+    font-size: var(--body-font-size-medium);
+}
+
+
+
+
+
+/* possibilities section stylling stop */
+
+
+/* around university section stylling start */
+
+.around-uni{
+    padding: 0 0 100px 0;
+}
+
+.around-uni h1{
+    font-size: var(--heading1-font-size);
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--color-black);
+    padding: 0 0 60px 0;
+}
+
+.around-uni-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.around-uni-item{
+    flex-basis: 23%;
+    background-color: white;
+    border-radius: 3px;
+    margin: 15px 0px;
+    transition: all .3s ease;
+    -webkit-box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.15);
+    box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.15);
+}
+
+.around-uni-item:hover{
+    -webkit-box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.25);
+    box-shadow: 0px 6px 41px -3px rgba(0,0,0,0.25);
+}
+
+.around-uni-item img{
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.around-uni-item .desc{
+    padding: 15px 15px;
+}
+
+.around-uni-item .desc h4{
+    font-size: var(--body-font-size);
+    font-weight: 500;
+    color: var(--color-black);
+    transition: all .3s ease;
+}
+
+.around-uni-item .active h4{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.around-uni-item .desc h4:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.around-uni-item .desc span{
+    font-size: var(--body-font-mini);
+    color: var(--color-light);
+}
+
+.around-uni-item .desc p{
+    font-size: var(--body-font-size);
+    color: var(--color-light);
+    padding-top: 20px;
+}
+/* around university section stylling stop */
+
+/* ====== bg wave 1 ======*/
+.bg-wave1{
+    background: url('../images/bg\ wave1.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left 400px;
+}
+/* ====== bg wave 2 ======*/
+
+.bg-wave2{
+    background: url('../images/bg\ wave2.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 1100px;
+}
+
+/* footer section stylling start */
+.footer-widget{
+    background: #252c3a;
+}
+
+.footer-widget-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 70px 0px;
+}
+
+.footer-widget-wrap .widget{
+    flex-basis: 23%;
+    margin: 0;
+}
+
+.footer-widget-wrap .widget1 p{
+    font-size: var(--body-font-size);
+    color: var(--color-extralight);
+    padding: 10px 0px 15px 0px;
+    line-height: 1.3;
+}
+
+.footer-widget-wrap .widget1 ul{
+    padding: 15px 0px;
+    margin-right: 20px;
+    border-top:1px solid var(--color-extralight);
+}
+
+.footer-widget-wrap .widget1 ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-widget-wrap .widget1 ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: var(--body-font-size);
+    color: var(--color-light);
+    margin-right: 8px;
+    transition: all .3s ease;
+}
+
+.footer-widget-wrap .widget1 ul li a:hover{
+    color: var(--main-color);
+}
+
+.footer-widget-wrap .widget2{
+    padding-right: 20px;
+}
+
+.footer-widget-wrap .widget2 h5, .footer-widget-wrap .widget3 h5{
+    font-size: var(--body-font-size);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.footer-widget-wrap .widget2 ul, .footer-widget-wrap .widget3 ul{
+    padding-top: 20px;
+}
+
+.footer-widget-wrap .widget2 ul li, .footer-widget-wrap .widget3 ul li{
+    padding-top: 15px;
+}
+
+
+.footer-widget-wrap .widget2 ul li a, .footer-widget-wrap .widget3 ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: var(--body-font-size);
+    line-height: 20px;
+    color: var(--color-extralight);
+}
+
+.footer-widget-wrap .widget2 ul li a span, .footer-widget-wrap .widget3 ul li a span{
+    font-size: var(--body-font-mini);
+    line-height: 20px;
+    color: var(--color-light);
+}
+
+.footer-widget-wrap .widget4 h5{
+    font-size: var(--body-font-size);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-white); 
+}
+
+.footer-widget-wrap .widget4 p{
+    font-size: var(--body-font-size);
+    color: var(--color-extralight);
+    padding: 35px 0 0 0;
+    line-height: 1.3;
+    font-family: var(--secondery-font);
+}
+
+.footer-widget-wrap .widget4 .newsletter-form{
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-widget-wrap .widget4 .newsletter-form input[type="submit"]{
+    padding: 7px 10px;
+    font-size: var(--body-font-size);
+    background: var(--main-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.footer-widget-wrap .widget4 .newsletter-form input[type="email"]{
+    padding: 7px 10px;
+    font-size: var(--body-font-size);
+    background: white;
+    border: none;
+    outline: none;
+}
+
+.footer-bar{
+    background: #1d232e;
+}
+
+.footer-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.footer-bar p{
+    font-size: var(--body-font-size-mini);
+    color: var(--color-extralight);
+    font-family: var(--secondery-font);
+    line-height: 1.3;
+}
+
+.footer-bar p a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.footer-bar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-bar ul li{
+    list-style-type: none;
+}
+
+.footer-bar ul li a{
+    display: block;
+    text-decoration: none;
+    padding-left:15px;
+    font-size: var(--body-font-size-mini);
+    color: var(--color-extralight);
+    font-family: var(--secondery-font);
+    line-height: 1.3;
+}
+
+
+
+/* footer section stylling stop */
